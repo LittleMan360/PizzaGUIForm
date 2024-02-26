@@ -47,13 +47,14 @@ class PizzaGuiFrame extends JFrame {
         createCrustPanel();
         mainPnl.add(crustPanel, BorderLayout.WEST);
         CreateSizePanel();
-        mainPnl.add(sizePanel, BorderLayout.CENTER);
+        mainPnl.add(sizePanel, BorderLayout.NORTH);
         CreateToppingPanel();
-        mainPnl.add(toppingPanel, BorderLayout.EAST);
-        CreateOrderPanel();
-        mainPnl.add(orderPanel, BorderLayout.SOUTH);
+        mainPnl.add(toppingPanel, BorderLayout.CENTER);
         CreateButtonPanel();
-        mainPnl.add(buttonPanel, BorderLayout.NORTH);
+        mainPnl.add(buttonPanel, BorderLayout.SOUTH);
+        CreateOrderPanel();
+        mainPnl.add(orderPanel, BorderLayout.EAST);
+
 
         add(mainPnl);
 
